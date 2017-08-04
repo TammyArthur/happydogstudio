@@ -1,0 +1,47 @@
+.features {
+  background-color: #fafafa;
+  border-top: 1px solid #ededed;
+
+  .single-feature {
+    @include span-columns(12);
+
+    @include media($tablet) { @include span-columns(3); }
+  }
+
+  .feature-header {
+    margin-bottom: 18px;
+
+    .circle-container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-right: 10px;
+      display: inline-block;
+
+      .circle {
+        box-sizing: initial !important;
+        border-style: solid;
+        text-align: center;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        font-size: 1.25em;
+        color: #ffffff;
+        @include size(46px);
+        line-height: 46px;
+        background-color: $teal;
+      }
+    }
+
+    .title-container {
+      display: inline-block;
+
+      h2 {
+        font-size: 1.4em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
