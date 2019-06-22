@@ -1,0 +1,44 @@
+// Third Party
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+@import 'vendor/normalize';
+
+// Typography
+$base-font-family: "Arvo", arial, sans-serif;
+$heading-font-family: 'Raleway', sans-serif;
+$serif-font-family: "Merriweather", sans-serif;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.8;
+$heading-line-height: 1.2;
+
+// Colors
+$teal: #388EA0;
+$purple: #785698;
+$pink: #F095C3;
+$gray: #444;
+
+// Font Colors
+$action-color: #111;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+$max-width: em(1170) !global;
+
+$mobile: new-breakpoint(max-width 480px);
+$tablet: new-breakpoint(min-width 768px);
+$desktop: new-breakpoint(min-width 992px);
+
+// Partials
+@import 'partials/basic';
+@import 'partials/testimonial';
+@import 'partials/home';
+@import 'partials/features';
+@import 'partials/portfolio';
+@import 'partials/contact';
+@import 'partials/footer';

@@ -1,0 +1,23 @@
+.footer {
+  text-align: center;
+  font-size: 0.9em;
+  background: #f8f8f8;
+  padding: 60px 0;
+
+  @include media($tablet) { padding: 80px 0; }
+
+  a {
+    color: #888;
+    @include transition(all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000));
+  }
+
+  .footer-copy {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .footer-small-text {
+    font-size: 0.8em;
+    color: #999;
+  }
+}
